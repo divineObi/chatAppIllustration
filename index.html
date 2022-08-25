@@ -1,51 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Chat App Illustration</title>
 </head>
+
 <body>
+  <div class="card-body">
+    <div class="purple" id="purpleid"></div>
+    <div class="grey" id="greyid"></div>
+    <div class="container">
+      <div class="phone-section">
+        <div class="header">
+          <p class="icon">
+            <iconify-icon icon="dashicons:arrow-left-alt2" style="color: white;"></iconify-icon>
+          </p>
+          <div class="contact">
+            <img src="images/avatar.jpg" alt="" width="40px" height="40px">
+            <div class="contact-name">
+              <h4>Samuel Green</h4>
+              <p>Available to Walk</p>
+            </div>
+          </div>
+          <p class="icon">
+            <iconify-icon icon="la:ellipsis-v" style="color: white;"></iconify-icon>
+          </p>
+        </div>
+        <div class="content">
+          <div class="sender-bubble">
+            That sounds great. I’d be happy with that.
+          </div>
+          <div class="sender-bubble">
+            Could you send over some pictures of your dog, please?
+          </div>
+          <div class="img">
+            <img src="images/dog-image-1.jpg" alt="">
+            <img src="images/dog-image-2.jpg" alt="">
+            <img src="images/dog-image-3.jpg" alt="">
+          </div>
+          <div class="receiver-bubble">
+            Here are a few pictures. She’s a happy girl!
+          </div>
+          <div class="receiver-bubble">
+            Can you make it?
+          </div> <span class="nodge"></span>
+          <div class="sender-bubble">
+            She looks so happy! The time we discussed works. How long shall I take her out for?
+          </div>
+          <div class="radio">
+            <div class="radio-input"><input type="radio" id="30min" name="walk" value="30min">
+              <label for="30min" class="time">30 minute walk</label>
+            </div>
+            <div class="price">$29</div>
+          </div>
+          <div class="radio">
+            <div class="radio-input"><input type="radio" id="1hr" name="walk" value="1hr">
+              <label for="30min" class="time">1 hour walk </label>
+            </div>
+            <div class="price pricer">$49</div>
+          </div>
+          <div class="message">
+            <input type="text" placeholder="Type a message…"><button>
+              <iconify-icon icon="dashicons:arrow-right-alt2" style="color: white;"></iconify-icon>
+            </button>
+          </div>
 
-  Samuel Green
-  Available to Walk
 
-  That sounds great. I’d be happy with that.
+        </div>
+      </div>
+      <div class="write-up-section">
+        <h1> Simple booking</h1>
+        <p> Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate
+          your walker and book again all through the chat.</p>
+      </div>
 
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
   </div>
+
 </body>
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.2/iconify-icon.min.js"></script>
+
 </html>
